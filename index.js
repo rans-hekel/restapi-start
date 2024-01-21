@@ -98,7 +98,7 @@ app.delete("/coments/:id", (req, res) => {
   res.redirect("/coments");
 });
 
-app.get("/order", (req, res) => {
+app.get("/orders", (req, res) => {
   res.send("Hello World!");
 });
 
@@ -106,7 +106,7 @@ app.get("/", (req, res) => {
   res.send("Hello World!");
 });
 
-app.post("/order", (req, res) => {
+app.post("/orders", (req, res) => {
   const { barang, harga } = req.body;
   res.send(`barang anda adalah ${barang} dan harganya adalah : ${harga}`);
 });
